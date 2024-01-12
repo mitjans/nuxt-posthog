@@ -1,4 +1,16 @@
 
+## v1.1.1
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.1.0...v1.1.1)
+
+### 🏡 Chore
+
+- Update module name ([16796ce](https://github.com/mitjans/nuxt-posthog/commit/16796ce))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans@skello.io>
+
 ## v1.1.0
 
 
