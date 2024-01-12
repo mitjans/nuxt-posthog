@@ -8,6 +8,9 @@ dependencies:
   '@nuxt/kit':
     specifier: ^3.9.0
     version: 3.9.1(rollup@3.29.4)
+  defu:
+    specifier: ^6.1.4
+    version: 6.1.4
   posthog-js:
     specifier: ^1.98.2
     version: 1.98.2
