@@ -1,7 +1,8 @@
-import MyModule from '../../../src/module'
+import { resolve } from 'path';
 
 export default defineNuxtConfig({
-  modules: [
-    MyModule
-  ]
-})
+  alias: {
+    '@nuxtjs/posthog': resolve(__dirname, '../../../src/module.ts'),
+  },
+  modules: ['@nuxtjs/posthog'],
+});
