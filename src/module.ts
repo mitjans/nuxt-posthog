@@ -35,7 +35,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: '@nuxtjs/posthog',
+    name: 'nuxt-posthog',
     configKey: 'posthog',
   },
   defaults: {

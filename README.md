@@ -9,7 +9,7 @@
 
 - [✨ &nbsp;Release Notes](https://posthog.nuxtjs.org/changelog)
 - [📖 &nbsp;Documentation](https://posthog.nuxtjs.org)
-  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/@nuxtjs/posthog?file=playground%2Fapp.vue) -->
+  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-posthog?file=playground%2Fapp.vue) -->
 
 ## Features
 
@@ -22,24 +22,24 @@
 
 ## Quick Setup
 
-1. Add `@nuxtjs/posthog` dependency to your project
+1. Add `nuxt-posthog` dependency to your project
 
    ```bash
    # Using pnpm
-   pnpm add -D @nuxtjs/posthog
+   pnpm add -D nuxt-posthog
 
    # Using yarn
-   yarn add --dev @nuxtjs/posthog
+   yarn add --dev nuxt-posthog
 
    # Using npm
-   npm install --save-dev @nuxtjs/posthog
+   npm install --save-dev nuxt-posthog
    ```
 
-2. Add `@nuxtjs/posthog` to the `modules` section of `nuxt.config.ts`
+2. Add `nuxt-posthog` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
-  modules: ['@nuxtjs/posthog'],
+  modules: ['nuxt-posthog'],
 });
 ```
 
@@ -73,11 +73,11 @@ pnpm run release
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@nuxtjs/posthog/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/@nuxtjs/posthog
-[npm-downloads-src]: https://img.shields.io/npm/dm/@nuxtjs/posthog.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/@nuxtjs/posthog
-[license-src]: https://img.shields.io/npm/l/@nuxtjs/posthog.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/@nuxtjs/posthog
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-posthog/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/nuxt-posthog
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-posthog.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/nuxt-posthog
+[license-src]: https://img.shields.io/npm/l/nuxt-posthog.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/nuxt-posthog
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

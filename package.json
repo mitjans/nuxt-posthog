@@ -1,5 +1,5 @@
 {
-  "name": "@nuxtjs/posthog",
+  "name": "nuxt-posthog",
   "version": "1.1.0",
   "description": "Posthog module for nuxt",
   "repository": {

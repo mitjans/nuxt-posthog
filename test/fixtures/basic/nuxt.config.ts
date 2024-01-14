@@ -2,7 +2,7 @@ import { resolve } from 'path';
 
 export default defineNuxtConfig({
   alias: {
-    '@nuxtjs/posthog': resolve(__dirname, '../../../src/module.ts'),
+    'nuxt-posthog': resolve(__dirname, '../../../src/module.ts'),
   },
-  modules: ['@nuxtjs/posthog'],
+  modules: ['nuxt-posthog'],
 });
