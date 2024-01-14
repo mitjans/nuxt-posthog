@@ -1,9 +1,11 @@
 {
-  "name": "my-module",
+  "name": "@nuxtjs/posthog",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
-  "repository": "your-org/my-module",
-  "license": "MIT",
+  "description": "Posthog module for nuxt",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitjans/nuxt-posthog.git"
+  },  "license": "MIT",
   "type": "module",
   "exports": {
     ".": {
