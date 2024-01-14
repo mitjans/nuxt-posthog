@@ -1,4 +1,4 @@
-import { defineNuxtPlugin, useRouter } from '#app';
+import { defineNuxtPlugin, useRouter, useRuntimeConfig } from '#app';
 import { posthog, type PostHogConfig } from 'posthog-js';
 import { defu } from 'defu';
 
