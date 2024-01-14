@@ -1,4 +1,16 @@
 
+## v1.1.2
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.1.1...v1.1.2)
+
+### 🩹 Fixes
+
+- Import useRuntimeConfig ([c5d8674](https://github.com/mitjans/nuxt-posthog/commit/c5d8674))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans@skello.io>
+
 ## v1.1.1
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.1.0...v1.1.1)
