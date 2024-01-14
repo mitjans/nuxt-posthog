@@ -1,0 +1,59 @@
+import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit';
+import type { PostHogConfig } from 'posthog-js';
+import { defu } from 'defu';
+
+export interface ModuleOptions {
+  /**
+   * The Posthog API key
+   * @default process.env.POSTHOG_API_KEY
+   * @example 'phc_1234567890abcdef1234567890abcdef1234567890a'
+   * @type string
+   * @docs https://posthog.com/docs/api
+   */
+  publicKey: string;
+
+  /**
+   * The Posthog API host
+   * @default process.env.POSTHOG_API_HOST
+   * @example 'https://app.posthog.com'
+   * @type string
+   * @docs https://posthog.com/docs/api
+   */
+  host: string;
+
+  /**
+   * Posthog Client options
+   * @default {
+   *    api_host: process.env.POSTHOG_API_HOST,
+   *    loaded: () => <enable debug mode if in development>
+   * }
+   * @type object
+   * @docs https://posthog.com/docs/libraries/js#config
+   */
+  clientOptions?: PostHogConfig;
+}
+
+export default defineNuxtModule<ModuleOptions>({
+  meta: {
+    name: '@nuxtjs/posthog',
+    configKey: 'posthog',
+  },
+  defaults: {
+    publicKey: process.env.POSTHOG_API_KEY as string,
+    host: process.env.POSTHOG_API_HOST as string,
+  },
+  setup(options, nuxt) {
+    const { resolve } = createResolver(import.meta.url);
+
+    // Public runtimeConfig
+    nuxt.options.runtimeConfig.public.posthog = defu<ModuleOptions, ModuleOptions[]>(
+      nuxt.options.runtimeConfig.public.posthog,
+      {
+        publicKey: options.publicKey,
+        host: options.host,
+      },
+    );
+
+    addPlugin(resolve('./runtime/posthog.client'));
+  },
+});
