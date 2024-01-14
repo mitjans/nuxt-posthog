@@ -62,6 +62,6 @@ export default defineNuxtModule<ModuleOptions>({
       console.warn('Missing Posthog API host, set it either in `nuxt.config.ts` or via env variable');
     }
 
-    addPlugin(resolve('./runtime/posthog.client'));
+    addPlugin(resolve('./runtime/plugins/posthog.client'));
   },
 });
