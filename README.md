@@ -37,11 +37,11 @@
 
 2. Add `nuxt-posthog` to the `modules` section of `nuxt.config.ts`
 
-```js
-export default defineNuxtConfig({
-  modules: ['nuxt-posthog'],
-});
-```
+   ```js
+   export default defineNuxtConfig({
+     modules: ['nuxt-posthog'],
+   });
+   ```
 
 That's it! You can now use Posthog in your Nuxt app ✨
 
