@@ -22,6 +22,14 @@ export interface ModuleOptions {
   host: string;
 
   /**
+   * If set to true, the module will capture page views automatically
+   * @default true
+   * @type boolean
+   * @docs https://posthog.com/docs/product-analytics/capture-events#single-page-apps-and-pageviews
+   */
+  capturePageViews?: boolean;
+
+  /**
    * Posthog Client options
    * @default {
    *    api_host: process.env.POSTHOG_API_HOST,
@@ -41,6 +49,7 @@ export default defineNuxtModule<ModuleOptions>({
   defaults: {
     publicKey: process.env.POSTHOG_API_KEY as string,
     host: process.env.POSTHOG_API_HOST as string,
+    capturePageViews: true,
   },
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);

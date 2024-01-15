@@ -17,13 +17,15 @@ export default defineNuxtPlugin({
 
     const posthogClient = posthog.init(config.publicKey, clientOptions);
 
-    // Make sure that pageviews are captured with each route change
-    const router = useRouter();
-    router.afterEach((to) => {
-      posthog.capture('$pageview', {
-        current_url: to.fullPath,
+    if (config.capturePageViews) {
+      // Make sure that pageviews are captured with each route change
+      const router = useRouter();
+      router.afterEach((to) => {
+        posthog.capture('$pageview', {
+          current_url: to.fullPath,
+        });
       });
-    });
+    }
 
     return {
       provide: {
