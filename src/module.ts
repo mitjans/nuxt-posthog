@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit';
+import { defineNuxtModule, addPlugin, createResolver, addTypeTemplate } from '@nuxt/kit';
 import type { PostHogConfig } from 'posthog-js';
 import { defu } from 'defu';
 
@@ -71,6 +71,12 @@ export default defineNuxtModule<ModuleOptions>({
       console.warn('Missing Posthog API host, set it either in `nuxt.config.ts` or via env variable');
     }
 
+    addPlugin(resolve('./runtime/plugins/directives'));
     addPlugin(resolve('./runtime/plugins/posthog.client'));
+
+    addTypeTemplate({
+      filename: 'types/posthog-directives.d.ts',
+      src: resolve('./runtime/types/directives.d.ts'),
+    });
   },
 });
