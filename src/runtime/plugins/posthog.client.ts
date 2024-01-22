@@ -5,7 +5,7 @@ import { defu } from 'defu';
 export default defineNuxtPlugin({
   name: 'posthog',
   enforce: 'pre',
-  setup: () => {
+  setup: async () => {
     const config = useRuntimeConfig().public.posthog;
 
     const clientOptions = defu<PostHogConfig, Partial<PostHogConfig>[]>(config.clientOptions ?? {}, {
@@ -26,6 +26,9 @@ export default defineNuxtPlugin({
         });
       });
     }
+
+    // Wait for feature flags to be loaded
+    await new Promise((resolve) => posthog.onFeatureFlags(resolve));
 
     return {
       provide: {

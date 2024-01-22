@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, addTypeTemplate } from '@nuxt/kit';
+import { defineNuxtModule, addImports, addComponent, addPlugin, createResolver, addTypeTemplate } from '@nuxt/kit';
 import type { PostHogConfig } from 'posthog-js';
 import { defu } from 'defu';
 
@@ -73,7 +73,14 @@ export default defineNuxtModule<ModuleOptions>({
 
     addPlugin(resolve('./runtime/plugins/directives'));
     addPlugin(resolve('./runtime/plugins/posthog.client'));
-
+    addImports({
+      from: resolve('./runtime/composables/usePosthogFeatureFlag'),
+      name: 'usePosthogFeatureFlag',
+    });
+    addComponent({
+      filePath: resolve('./runtime/components/PosthogFeatureFlag.vue'),
+      name: 'PosthogFeatureFlag',
+    });
     addTypeTemplate({
       filename: 'types/posthog-directives.d.ts',
       src: resolve('./runtime/types/directives.d.ts'),

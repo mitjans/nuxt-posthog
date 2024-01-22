@@ -1,4 +1,4 @@
-import { useNuxtApp } from 'nuxt/app';
+import { useNuxtApp } from '#app';
 import type { ObjectDirective, FunctionDirective } from 'vue';
 
 const directive: FunctionDirective<HTMLElement, PosthogCaptureEvent | string> = (el, { value }) => {
