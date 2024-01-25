@@ -1,12 +1,12 @@
-title: 'Nuxt Posthog'
-description: 'Integrate Posthog into your Nuxt application'
+title: 'Nuxt PostHog'
+description: 'Integrate PostHog into your Nuxt application'
 navigation: false
 hero:
-  title: 'Nuxt [Posthog]{.text-primary}'
-  description: 'Integrate Posthog into your Nuxt application with minimal effort and maximum flexibility ✨'
+  title: 'Nuxt [PostHog]{.text-primary}'
+  description: 'Integrate PostHog into your Nuxt application with minimal effort and maximum flexibility ✨'
   orientation: horizontal
   headline:
-    label: Check out Posthog
+    label: Check out PostHog
     to: https://posthog.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
@@ -42,17 +42,17 @@ features:
       to: 'https://nuxt.com'
       target: '_blank'
     - title: 'Zero Configuration'
-      description: 'Start right away by just adding your Posthog API key.'
+      description: 'Start right away by just adding your PostHog API key.'
       icon: 'i-heroicons-cog-6-tooth'
       to: 'https://content.nuxt.com'
       target: '_blank'
     - title: 'Vue Composables'
-      description: 'Offers a set of Vue composables to easily integrate Posthog into your application.'
+      description: 'Offers a set of Vue composables to easily integrate PostHog into your application.'
       icon: 'i-heroicons-sparkles'
       to: 'https://ui.nuxt.com'
       target: '_blank'
     - title: 'Vue Directives'
-      description: 'Use Vue directives to easily capture Posthog events.'
+      description: 'Use Vue directives to easily capture PostHog events.'
       icon: 'i-heroicons-bolt'
       to: 'https://www.typescriptlang.org'
       target: '_blank'
