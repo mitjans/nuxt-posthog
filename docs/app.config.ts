@@ -22,7 +22,7 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       icon: 'i-simple-icons-github',
-      to: 'https://github.com/nuxt-ui-pro/docs',
+      to: 'https://github.com/mitjans/nuxt-posthog',
       target: '_blank',
       'aria-label': 'Docs template on GitHub'
     }]
@@ -47,7 +47,7 @@ export default defineAppConfig({
       'aria-label': 'Nuxt on X'
     }, {
       icon: 'i-simple-icons-github',
-      to: 'https://github.com/nuxt/ui',
+      to: 'https://github.com/mitjans/nuxt-posthog',
       target: '_blank',
       'aria-label': 'Nuxt UI on GitHub'
     }]
@@ -56,21 +56,21 @@ export default defineAppConfig({
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/nuxt-ui-pro/docs/edit/main/content',
+      edit: 'https://github.com/mitjans/posthog/edit/main/docs/content',
       links: [{
         icon: 'i-heroicons-star',
         label: 'Star on GitHub',
-        to: 'https://github.com/nuxt/ui',
+        to: 'https://github.com/mitjans/nuxt-posthog',
         target: '_blank',
       }, {
         icon: 'i-heroicons-book-open',
-        label: 'Nuxt UI Pro docs',
+        label: 'Nuxt docs',
         to: 'https://ui.nuxt.com/pro/guide',
         target: '_blank',
       }, {
-        icon: 'i-simple-icons-nuxtdotjs',
-        label: 'Purchase a license',
-        to: 'https://ui.nuxt.com/pro/purchase',
+        icon: 'i-simple-icons-posthog',
+        label: 'Posthog docs',
+        to: 'https://posthog.com/docs',
         target: '_blank',
       }]
     }

@@ -1,13 +1,13 @@
-title: 'Nuxt UI Pro - Docs template'
-description: 'Welcome to Nuxt UI Pro documentation template.'
+title: 'Nuxt Posthog'
+description: 'Integrate Posthog into your Nuxt application'
 navigation: false
 hero:
-  title: 'Build your docs in seconds'
-  description: 'Create your documentation in seconds with this template!'
+  title: 'Nuxt [Posthog]{.text-primary}'
+  description: 'Integrate Posthog into your Nuxt application with minimal effort and maximum flexibility ✨'
   orientation: horizontal
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    label: Check out Posthog
+    to: https://posthog.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
@@ -15,54 +15,54 @@ hero:
       trailing: true
       to: '/getting-started'
       size: lg
-    - label: Use this template
+    - label: Star on Github
       icon: i-simple-icons-github
       size: lg
       color: gray
-      to: https://github.com/nuxt-ui-pro/docs
+      to: https://github.com/mitjans/nuxt-posthog
       target: _blank
   code: |
-    ```bash [Terminal]
-    npx nuxi init -t github:nuxt-ui-pro/docs
+    ```vue [app.vue]
+    <!-- Easily capture events using Vue directives -->
+    <button v-posthog-capture="'cta_clicked'">
+      Get Started
+    </button>
+
+    <!-- Hide content behind feature flags -->
+    <PosthogFeatureFlag name="new_feature">
+      Content under feature flag
+    </PosthogFeatureFlag>
     ```
 features:
-  title: 'All-in-one docs template'
-  links:
-    - label: 'Explore Nuxt UI Pro'
-      icon: 'i-simple-icons-nuxtdotjs'
-      trailingIcon: 'i-heroicons-arrow-right-20-solid'
-      color: 'gray'
-      to: 'https://ui.nuxt.com/pro'
-      target: '_blank'
-      size: lg
+  title: 'Features'
   items:
-    - title: 'Nuxt 3'
-      description: 'Powered by Nuxt 3 for optimal performances and SEO.'
+    - title: 'Nuxt 3 ready'
+      description: 'You can start using this module in your Nuxt 3 application.'
       icon: 'i-simple-icons-nuxtdotjs'
       to: 'https://nuxt.com'
       target: '_blank'
-    - title: 'Markdown'
-      description: 'Write your pages with MDC thanks to Nuxt Content.'
-      icon: 'i-simple-icons-markdown'
+    - title: 'Zero Configuration'
+      description: 'Start right away by just adding your Posthog API key.'
+      icon: 'i-heroicons-cog-6-tooth'
       to: 'https://content.nuxt.com'
       target: '_blank'
-    - title: 'Nuxt UI'
-      description: 'Offers a very large set of full customizable components.'
-      icon: 'i-heroicons-sparkles-20-solid'
+    - title: 'Vue Composables'
+      description: 'Offers a set of Vue composables to easily integrate Posthog into your application.'
+      icon: 'i-heroicons-sparkles'
       to: 'https://ui.nuxt.com'
       target: '_blank'
-    - title: 'TypeScript'
-      description: 'A fully typed development experience.'
-      icon: 'i-simple-icons-typescript'
+    - title: 'Vue Directives'
+      description: 'Use Vue directives to easily capture Posthog events.'
+      icon: 'i-heroicons-bolt'
       to: 'https://www.typescriptlang.org'
       target: '_blank'
-    - title: 'Nuxt Studio'
-      description: 'Supported by Nuxt Studio for fast updates and previews.'
-      icon: 'i-simple-icons-nuxtdotjs'
+    - title: 'SSR in mind'
+      description: 'This module is SSR friendly, making it work with server rendered applications.'
+      icon: 'i-heroicons-server'
       to: 'https://nuxt.studio'
       target: '_blank'
-    - title: 'Search'
-      description: 'A full-text search modal empowered by Fuse.js.'
-      icon: 'i-heroicons-magnifying-glass-20-solid'
+    - title: 'More to come...'
+      description: 'New features will be added in the future. Stay tuned!'
+      icon: 'i-heroicons-rocket-launch'
       to: 'https://ui.nuxt.com/pro/components/docs/docs-search'
       target: '_blank'
