@@ -65,7 +65,7 @@ export default defineAppConfig({
       }, {
         icon: 'i-heroicons-book-open',
         label: 'Nuxt docs',
-        to: 'https://ui.nuxt.com/pro/guide',
+        to: 'https://nuxt.com/docs',
         target: '_blank',
       }, {
         icon: 'i-simple-icons-posthog',
