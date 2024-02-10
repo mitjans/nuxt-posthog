@@ -5,7 +5,7 @@
 ### 🚀 Enhancements
 
 - Allow turning off pageview captures ([3182592](https://github.com/mitjans/nuxt-posthog/commit/3182592))
-- Add vPosthogCapture directive and related types ([d11f13c](https://github.com/mitjans/nuxt-posthog/commit/d11f13c))
+- Add vPostHogCapture directive and related types ([d11f13c](https://github.com/mitjans/nuxt-posthog/commit/d11f13c))
 
 ### 💅 Refactors
 

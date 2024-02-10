@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import usePosthogFeatureFlag from '../composables/usePosthogFeatureFlag';
+import usePostHogFeatureFlag from '../composables/usePostHogFeatureFlag';
 
 const { name } = withDefaults(
   defineProps<{
@@ -10,7 +10,7 @@ const { name } = withDefaults(
   { match: true },
 );
 
-const { getFeatureFlag } = usePosthogFeatureFlag();
+const { getFeatureFlag } = usePostHogFeatureFlag();
 
 const featureFlag = computed(() => {
   return getFeatureFlag(name);

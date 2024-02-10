@@ -1,0 +1,63 @@
+title: 'Nuxt PostHog'
+description: 'Integrate PostHog into your Nuxt application'
+navigation: false
+hero:
+  title: 'Nuxt [PostHog]{.text-primary}'
+  description: 'Integrate PostHog into your Nuxt application with minimal effort and maximum flexibility ✨'
+  orientation: horizontal
+  headline:
+    label: Check out PostHog
+    to: https://posthog.com
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+  links:
+    - label: Get started
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: '/getting-started'
+      size: lg
+    - label: Star on Github
+      icon: i-simple-icons-github
+      size: lg
+      color: gray
+      to: https://github.com/mitjans/nuxt-posthog
+      target: _blank
+  code: |
+    ```vue [app.vue]
+    <!-- Easily capture events using Vue directives -->
+    <button v-posthog-capture="'cta_clicked'">
+      Get Started
+    </button>
+
+    <!-- Hide content behind feature flags -->
+    <PostHogFeatureFlag name="new_feature">
+      Content under feature flag
+    </PostHogFeatureFlag>
+    ```
+features:
+  title: 'Features'
+  items:
+    - title: 'Nuxt 3 ready'
+      description: 'You can start using this module in your Nuxt 3 application.'
+      icon: 'i-simple-icons-nuxtdotjs'
+      to: 'https://nuxt.com'
+      target: '_blank'
+    - title: 'Zero Configuration'
+      description: 'Start right away by just adding your PostHog API key.'
+      icon: 'i-heroicons-cog-6-tooth'
+      target: '_blank'
+    - title: 'Vue Composables'
+      description: 'Offers a set of Vue composables to easily integrate PostHog into your application.'
+      icon: 'i-heroicons-sparkles'
+      target: '_blank'
+    - title: 'Vue Directives'
+      description: 'Use Vue directives to easily capture PostHog events.'
+      icon: 'i-heroicons-bolt'
+      target: '_blank'
+    - title: 'SSR in mind'
+      description: 'This module is SSR friendly, making it work with server rendered applications.'
+      icon: 'i-heroicons-server'
+      target: '_blank'
+    - title: 'More to come...'
+      description: 'New features will be added in the future. Stay tuned!'
+      icon: 'i-heroicons-rocket-launch'
+      target: '_blank'
