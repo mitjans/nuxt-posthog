@@ -1,7 +1,7 @@
 import type { ObjectDirective } from 'vue';
 
 declare global {
-  export interface PosthogCaptureEvent {
+  export interface PostHogCaptureEvent {
     /**
      * Event name
      *
@@ -20,7 +20,7 @@ declare global {
 
 declare module 'vue' {
   export interface ComponentCustomProperties {
-    vPosthogCapture: ObjectDirective<HTMLElement, PosthogCaptureEvent | string>;
+    vPosthogCapture: ObjectDirective<HTMLElement, PostHogCaptureEvent | string>;
   }
 }
 export {};

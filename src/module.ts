@@ -4,7 +4,7 @@ import { defu } from 'defu';
 
 export interface ModuleOptions {
   /**
-   * The Posthog API key
+   * The PostHog API key
    * @default process.env.POSTHOG_API_KEY
    * @example 'phc_1234567890abcdef1234567890abcdef1234567890a'
    * @type string
@@ -13,7 +13,7 @@ export interface ModuleOptions {
   publicKey: string;
 
   /**
-   * The Posthog API host
+   * The PostHog API host
    * @default process.env.POSTHOG_API_HOST
    * @example 'https://app.posthog.com'
    * @type string
@@ -30,7 +30,7 @@ export interface ModuleOptions {
   capturePageViews?: boolean;
 
   /**
-   * Posthog Client options
+   * PostHog Client options
    * @default {
    *    api_host: process.env.POSTHOG_API_HOST,
    *    loaded: () => <enable debug mode if in development>
@@ -65,21 +65,21 @@ export default defineNuxtModule<ModuleOptions>({
 
     // Make sure url and key are set
     if (!nuxt.options.runtimeConfig.public.posthog.publicKey) {
-      console.warn('Missing Posthog API public key, set it either in `nuxt.config.ts` or via env variable');
+      console.warn('Missing PostHog API public key, set it either in `nuxt.config.ts` or via env variable');
     }
     if (!nuxt.options.runtimeConfig.public.posthog.host) {
-      console.warn('Missing Posthog API host, set it either in `nuxt.config.ts` or via env variable');
+      console.warn('Missing PostHog API host, set it either in `nuxt.config.ts` or via env variable');
     }
 
     addPlugin(resolve('./runtime/plugins/directives'));
     addPlugin(resolve('./runtime/plugins/posthog.client'));
     addImports({
-      from: resolve('./runtime/composables/usePosthogFeatureFlag'),
-      name: 'usePosthogFeatureFlag',
+      from: resolve('./runtime/composables/usePostHogFeatureFlag'),
+      name: 'usePostHogFeatureFlag',
     });
     addComponent({
-      filePath: resolve('./runtime/components/PosthogFeatureFlag.vue'),
-      name: 'PosthogFeatureFlag',
+      filePath: resolve('./runtime/components/PostHogFeatureFlag.vue'),
+      name: 'PostHogFeatureFlag',
     });
     addTypeTemplate({
       filename: 'types/posthog-directives.d.ts',

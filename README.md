@@ -1,11 +1,11 @@
-# Nuxt Posthog
+# Nuxt PostHog
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-> [Posthog](https://posthog.com/) module for [Nuxt](https://nuxt.com/)
+> [PostHog](https://posthog.com/) module for [Nuxt](https://nuxt.com/)
 
 - [✨ &nbsp;Release Notes](https://posthog.nuxtjs.org/changelog)
 - [📖 &nbsp;Documentation](https://posthog.nuxtjs.org)
@@ -18,7 +18,7 @@
 - Nuxt 3 ready
 - Typescript support
 - Automatic configuration
-- Vue global directives for Posthog events
+- Vue global directives for PostHog events
 
 ## Quick Setup
 
@@ -43,7 +43,7 @@
    });
    ```
 
-That's it! You can now use Posthog in your Nuxt app ✨
+That's it! You can now use PostHog in your Nuxt app ✨
 
 ## Development
 

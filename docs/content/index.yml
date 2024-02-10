@@ -29,9 +29,9 @@ hero:
     </button>
 
     <!-- Hide content behind feature flags -->
-    <PosthogFeatureFlag name="new_feature">
+    <PostHogFeatureFlag name="new_feature">
       Content under feature flag
-    </PosthogFeatureFlag>
+    </PostHogFeatureFlag>
     ```
 features:
   title: 'Features'
@@ -44,25 +44,20 @@ features:
     - title: 'Zero Configuration'
       description: 'Start right away by just adding your PostHog API key.'
       icon: 'i-heroicons-cog-6-tooth'
-      to: 'https://content.nuxt.com'
       target: '_blank'
     - title: 'Vue Composables'
       description: 'Offers a set of Vue composables to easily integrate PostHog into your application.'
       icon: 'i-heroicons-sparkles'
-      to: 'https://ui.nuxt.com'
       target: '_blank'
     - title: 'Vue Directives'
       description: 'Use Vue directives to easily capture PostHog events.'
       icon: 'i-heroicons-bolt'
-      to: 'https://www.typescriptlang.org'
       target: '_blank'
     - title: 'SSR in mind'
       description: 'This module is SSR friendly, making it work with server rendered applications.'
       icon: 'i-heroicons-server'
-      to: 'https://nuxt.studio'
       target: '_blank'
     - title: 'More to come...'
       description: 'New features will be added in the future. Stay tuned!'
       icon: 'i-heroicons-rocket-launch'
-      to: 'https://ui.nuxt.com/pro/components/docs/docs-search'
       target: '_blank'

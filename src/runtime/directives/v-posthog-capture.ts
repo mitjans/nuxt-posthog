@@ -1,7 +1,7 @@
 import { useNuxtApp } from '#app';
 import type { ObjectDirective, FunctionDirective } from 'vue';
 
-const directive: FunctionDirective<HTMLElement, PosthogCaptureEvent | string> = (el, { value }) => {
+const directive: FunctionDirective<HTMLElement, PostHogCaptureEvent | string> = (el, { value }) => {
   const { $posthog } = useNuxtApp();
   el.addEventListener('click', () => {
     if (!$posthog) return;
@@ -11,7 +11,7 @@ const directive: FunctionDirective<HTMLElement, PosthogCaptureEvent | string> = 
   });
 };
 
-export const vPosthogCapture: ObjectDirective = {
+export const vPostHogCapture: ObjectDirective = {
   mounted: directive,
   updated: directive,
 };
