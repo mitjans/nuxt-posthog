@@ -7,8 +7,8 @@
 
 > [PostHog](https://posthog.com/) module for [Nuxt](https://nuxt.com/)
 
-- [✨ &nbsp;Release Notes](https://posthog.nuxtjs.org/changelog)
-- [📖 &nbsp;Documentation](https://posthog.nuxtjs.org)
+- [✨ &nbsp;Release Notes](https://github.com/mitjans/nuxt-posthog/releases)
+- [📖 &nbsp;Documentation](https://nuxt-posthog.cmitjans.dev)
   <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-posthog?file=playground%2Fapp.vue) -->
 
 ## Features
