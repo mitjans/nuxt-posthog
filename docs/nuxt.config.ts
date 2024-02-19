@@ -39,5 +39,8 @@ export default defineNuxtConfig({
   },
   typescript: {
     strict: false
+  },
+  uiPro: {
+    license: 'oss'
   }
 })
