@@ -63,7 +63,7 @@ export default defineAppConfig({
     title: 'Table of Contents',
     bottom: {
       title: 'Community',
-      edit: 'https://github.com/mitjans/posthog/edit/main/docs/content',
+      edit: 'https://github.com/mitjans/nuxt-posthog/edit/main/docs/content',
       links: [
         {
           icon: 'i-heroicons-star',
@@ -86,4 +86,4 @@ export default defineAppConfig({
       ],
     },
   },
-});
+})
