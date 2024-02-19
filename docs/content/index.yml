@@ -35,6 +35,14 @@ hero:
     ```
 features:
   title: 'Features'
+  links:
+    - label: 'Documentation built using Nuxt UI Pro'
+      icon: 'i-simple-icons-nuxtdotjs'
+      trailingIcon: 'i-heroicons-arrow-right-20-solid'
+      color: 'gray'
+      to: 'https://ui.nuxt.com/pro'
+      target: '_blank'
+      size: lg
   items:
     - title: 'Nuxt 3 ready'
       description: 'You can start using this module in your Nuxt 3 application.'
