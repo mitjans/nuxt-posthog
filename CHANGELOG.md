@@ -1,4 +1,33 @@
 
+## v1.3.0
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.2.0...v1.3.0)
+
+### 🚀 Enhancements
+
+- Add PosthogFeatureFlag component and usePosthogFeatureFlag composable ([17cc604](https://github.com/mitjans/nuxt-posthog/commit/17cc604))
+
+### 📖 Documentation
+
+- Create documentation folder ([369c0ce](https://github.com/mitjans/nuxt-posthog/commit/369c0ce))
+- Landing page ([8f7f757](https://github.com/mitjans/nuxt-posthog/commit/8f7f757))
+- Use PostHog instead of Posthog ([0916a9f](https://github.com/mitjans/nuxt-posthog/commit/0916a9f))
+- Update PostHog logo ([76af2e1](https://github.com/mitjans/nuxt-posthog/commit/76af2e1))
+- Update nuxt docs link ([55628c3](https://github.com/mitjans/nuxt-posthog/commit/55628c3))
+- Add missing documentation ([bfee92a](https://github.com/mitjans/nuxt-posthog/commit/bfee92a))
+- Add Nuxt UI pro link ([0269246](https://github.com/mitjans/nuxt-posthog/commit/0269246))
+- Update github link ([f98c553](https://github.com/mitjans/nuxt-posthog/commit/f98c553))
+- Fix typo ([bd1e65b](https://github.com/mitjans/nuxt-posthog/commit/bd1e65b))
+
+### 🏡 Chore
+
+- Update dependencies ([151b746](https://github.com/mitjans/nuxt-posthog/commit/151b746))
+- Add oss license to docs ([c877fc5](https://github.com/mitjans/nuxt-posthog/commit/c877fc5))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.2.0
 
 
