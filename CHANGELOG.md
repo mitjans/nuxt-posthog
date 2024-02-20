@@ -1,4 +1,22 @@
 
+## v1.3.1
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.3.0...v1.3.1)
+
+### 📖 Documentation
+
+- Update copyright year ([354e579](https://github.com/mitjans/nuxt-posthog/commit/354e579))
+
+### 🏡 Chore
+
+- Update README links ([e0faccd](https://github.com/mitjans/nuxt-posthog/commit/e0faccd))
+- Update pnpm-lock files ([1e84f77](https://github.com/mitjans/nuxt-posthog/commit/1e84f77))
+- Update pnpm-lock files ([8061f89](https://github.com/mitjans/nuxt-posthog/commit/8061f89))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.3.0
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.2.0...v1.3.0)
