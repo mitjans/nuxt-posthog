@@ -1,20 +1,18 @@
-import { useNuxtApp } from '#app';
+import { useState } from '#app';
+import type { JsonType } from 'posthog-js';
 
 export default () => {
-  const { $posthog } = useNuxtApp();
+  const posthogFeatureFlags = useState<Record<string, boolean | string> | undefined>('ph-feature-flags');
+  const posthogFeatureFlagPayloads = useState<Record<string, JsonType> | undefined>('ph-feature-flag-payloads');
 
   const isFeatureEnabled = (feature: string) => {
-    if (!$posthog) return;
-
-    return $posthog.isFeatureEnabled(feature);
+    return posthogFeatureFlags.value?.[feature] ?? false;
   };
 
   const getFeatureFlag = (feature: string) => {
-    if (!$posthog) return;
-
     return {
-      value: $posthog.getFeatureFlag(feature),
-      payload: $posthog.getFeatureFlagPayload(feature),
+      value: posthogFeatureFlags.value?.[feature] ?? false,
+      payload: posthogFeatureFlagPayloads.value?.[feature],
     };
   };
 
