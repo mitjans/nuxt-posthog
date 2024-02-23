@@ -1,4 +1,16 @@
 
+## v1.4.2
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.1...v1.4.2)
+
+### 🏡 Chore
+
+- Remove server warning ([e7b4404](https://github.com/mitjans/nuxt-posthog/commit/e7b4404))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.4.1
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.0...v1.4.1)
