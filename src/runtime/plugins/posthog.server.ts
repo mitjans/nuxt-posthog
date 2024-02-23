@@ -9,7 +9,8 @@ export default defineNuxtPlugin({
     const config = useRuntimeConfig().public.posthog;
 
     if (config.publicKey.length === 0) {
-      console.warn('PostHog public key is not defined. Skipping PostHog setup.');
+      // PostHog public key is not defined. Skipping PostHog setup.
+      // User has already been warned on dev startup
       return {};
     }
 
