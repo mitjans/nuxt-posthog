@@ -8,6 +8,11 @@ export default defineNuxtPlugin({
   setup: async () => {
     const config = useRuntimeConfig().public.posthog;
 
+    if (config.publicKey.length === 0) {
+      console.warn('PostHog public key is not defined. Skipping PostHog setup.');
+      return {};
+    }
+
     const posthog = new PostHog(config.publicKey, { host: config.host });
     await posthog.reloadFeatureFlags();
 
