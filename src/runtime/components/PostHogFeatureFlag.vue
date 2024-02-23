@@ -12,13 +12,9 @@ const { name } = withDefaults(
 
 const { getFeatureFlag } = usePostHogFeatureFlag();
 
-const featureFlag = computed(() => {
-  return getFeatureFlag(name);
-});
+const featureFlag = computed(() => getFeatureFlag(name));
 </script>
 
 <template>
-  <ClientOnly>
-    <slot v-if="featureFlag?.value === match" :payload="featureFlag.payload" />
-  </ClientOnly>
+  <slot v-if="featureFlag?.value === match" :payload="featureFlag.payload" />
 </template>
