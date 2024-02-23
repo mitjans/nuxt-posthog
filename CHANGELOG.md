@@ -1,4 +1,21 @@
 
+## v1.4.0
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.3.1...v1.4.0)
+
+### 🚀 Enhancements
+
+- Use nuxt-posthog in docs ([62d10d4](https://github.com/mitjans/nuxt-posthog/commit/62d10d4))
+- Load feature flags on ssr ([2e101fe](https://github.com/mitjans/nuxt-posthog/commit/2e101fe))
+
+### 🩹 Fixes
+
+- Warn if posthog public key is empty ([00e2c62](https://github.com/mitjans/nuxt-posthog/commit/00e2c62))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.3.1
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.3.0...v1.3.1)
