@@ -1,4 +1,4 @@
-import { defineNuxtPlugin, useCookie, useState } from '#app';
+import { defineNuxtPlugin, useCookie, useRuntimeConfig, useState } from '#app';
 import { PostHog } from 'posthog-node';
 import type { JsonType } from 'posthog-js';
 
