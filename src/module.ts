@@ -60,6 +60,8 @@ export default defineNuxtModule<ModuleOptions>({
       {
         publicKey: options.publicKey,
         host: options.host,
+        capturePageViews: options.capturePageViews,
+        clientOptions: options.clientOptions,
       },
     );
 
