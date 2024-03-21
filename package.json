@@ -34,7 +34,7 @@
     "@nuxt/kit": "^3.11.1",
     "defu": "^6.1.4",
     "posthog-js": "^1.116.3",
-    "posthog-node": "^3.6.3"
+    "posthog-node": "^4.0.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
