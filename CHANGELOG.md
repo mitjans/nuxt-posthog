@@ -1,4 +1,21 @@
 
+## v1.4.3
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.2...v1.4.3)
+
+### 🩹 Fixes
+
+- Pass module options to Nuxt runtime public config ([433e013](https://github.com/mitjans/nuxt-posthog/commit/433e013))
+
+### 🏡 Chore
+
+- Update pnpm-lock file ([93a5074](https://github.com/mitjans/nuxt-posthog/commit/93a5074))
+- Update pnpm-lock file ([feeda4d](https://github.com/mitjans/nuxt-posthog/commit/feeda4d))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.4.2
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.1...v1.4.2)
