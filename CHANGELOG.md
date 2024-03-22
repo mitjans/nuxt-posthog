@@ -1,4 +1,16 @@
 
+## v1.4.4
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.3...v1.4.4)
+
+### 🩹 Fixes
+
+- Avoid duplicate $pageview events ([9a5d42f](https://github.com/mitjans/nuxt-posthog/commit/9a5d42f))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.4.3
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.2...v1.4.3)
