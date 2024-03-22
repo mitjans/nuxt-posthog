@@ -13,6 +13,7 @@ export default defineNuxtPlugin({
 
     const clientOptions = defu<PostHogConfig, Partial<PostHogConfig>[]>(config.clientOptions ?? {}, {
       api_host: config.host,
+      capture_pageview: false,
       bootstrap: {
         featureFlags: posthogFeatureFlags.value,
         featureFlagPayloads: posthogFeatureFlagPayloads.value,
