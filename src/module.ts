@@ -39,6 +39,14 @@ export interface ModuleOptions {
    * @docs https://posthog.com/docs/libraries/js#config
    */
   clientOptions?: PostHogConfig;
+
+  /**
+   * If set to true, the module will be disabled (no events will be sent to PostHog).
+   * This is useful for development environments. Directives and components will still be available for you to use.
+   * @default false
+   * @type boolean
+   */
+  disabled?: boolean;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -50,6 +58,7 @@ export default defineNuxtModule<ModuleOptions>({
     publicKey: process.env.POSTHOG_API_KEY as string,
     host: process.env.POSTHOG_API_HOST as string,
     capturePageViews: true,
+    disabled: false,
   },
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
@@ -62,6 +71,7 @@ export default defineNuxtModule<ModuleOptions>({
         host: options.host,
         capturePageViews: options.capturePageViews,
         clientOptions: options.clientOptions,
+        disabled: options.disabled,
       },
     );
 
