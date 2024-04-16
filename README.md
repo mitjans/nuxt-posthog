@@ -25,13 +25,6 @@
 1. Add `nuxt-posthog` dependency to your project
 
    ```bash
-   # Using pnpm
-   npx nuxi@latest module add nuxt-posthog
-
-   # Using yarn
-   npx nuxi@latest module add nuxt-posthog
-
-   # Using npm
    npx nuxi@latest module add nuxt-posthog
    ```
 
