@@ -25,14 +25,7 @@
 1. Add `nuxt-posthog` dependency to your project
 
    ```bash
-   # Using pnpm
-   pnpm add -D nuxt-posthog
-
-   # Using yarn
-   yarn add --dev nuxt-posthog
-
-   # Using npm
-   npm install --save-dev nuxt-posthog
+   npx nuxi@latest module add nuxt-posthog
    ```
 
 2. Add `nuxt-posthog` to the `modules` section of `nuxt.config.ts`
