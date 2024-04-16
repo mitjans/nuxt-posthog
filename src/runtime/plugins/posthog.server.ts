@@ -8,6 +8,13 @@ export default defineNuxtPlugin({
   setup: async () => {
     const config = useRuntimeConfig().public.posthog;
 
+    if (config.disabled)
+      return {
+        provide: {
+          serverPosthog: null as PostHog | null,
+        },
+      };
+
     if (config.publicKey.length === 0) {
       // PostHog public key is not defined. Skipping PostHog setup.
       // User has already been warned on dev startup
