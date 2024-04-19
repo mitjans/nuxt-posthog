@@ -1,4 +1,33 @@
 
+## v1.5.0
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.4...v1.5.0)
+
+### 🚀 Enhancements
+
+- Disable setting ([de621d5](https://github.com/mitjans/nuxt-posthog/commit/de621d5))
+
+### 🩹 Fixes
+
+- Partial client posthog configuration ([5790e2c](https://github.com/mitjans/nuxt-posthog/commit/5790e2c))
+
+### 📖 Documentation
+
+- Use new `nuxi module add` command in installation ([ca6a3f4](https://github.com/mitjans/nuxt-posthog/commit/ca6a3f4))
+- Add `disabled` config documentation ([360a2aa](https://github.com/mitjans/nuxt-posthog/commit/360a2aa))
+- Update installation command ([a895169](https://github.com/mitjans/nuxt-posthog/commit/a895169))
+
+### 🏡 Chore
+
+- **release:** V1.4.4 ([b9b1154](https://github.com/mitjans/nuxt-posthog/commit/b9b1154))
+- Update pnpm-lock ([8b40f83](https://github.com/mitjans/nuxt-posthog/commit/8b40f83))
+- Use new eslint flat config ([78c94b4](https://github.com/mitjans/nuxt-posthog/commit/78c94b4))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+- Daniel Roe ([@danielroe](http://github.com/danielroe))
+
 ## v1.4.4
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.3...v1.4.4)
