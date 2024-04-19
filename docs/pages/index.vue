@@ -1,18 +1,18 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('index', () => queryContent('/').findOne())
+const { data: page } = await useAsyncData('index', () => queryContent('/').findOne());
 
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
   description: page.value.description,
-  ogDescription: page.value.description
-})
+  ogDescription: page.value.description,
+});
 
 defineOgImage({
   component: 'Docs',
   title: page.value.title,
-  description: page.value.description
-})
+  description: page.value.description,
+});
 </script>
 
 <template>
@@ -26,7 +26,11 @@ defineOgImage({
 
           {{ page.hero.headline.label }}
 
-          <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon" class="ml-1 w-4 h-4 pointer-events-none" />
+          <UIcon
+            v-if="page.hero.headline.icon"
+            :name="page.hero.headline.icon"
+            class="ml-1 w-4 h-4 pointer-events-none"
+          />
         </UBadge>
       </template>
 

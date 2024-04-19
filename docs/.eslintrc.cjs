@@ -1,8 +1,6 @@
 module.exports = {
   root: true,
-  extends: [
-    '@nuxt/eslint-config'
-  ],
+  extends: ['@nuxt/eslint-config'],
   rules: {
     // Global
     semi: ['error', 'never'],
@@ -11,6 +9,6 @@ module.exports = {
     // Vue
     'vue/multi-word-component-names': 0,
     'vue/max-attributes-per-line': 'off',
-    'vue/no-v-html': 0
-  }
-}
+    'vue/no-v-html': 0,
+  },
+};

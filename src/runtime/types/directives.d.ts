@@ -1,4 +1,5 @@
 import type { ObjectDirective } from 'vue';
+import type { Property } from 'posthog-js';
 
 declare global {
   export interface PostHogCaptureEvent {
@@ -14,7 +15,7 @@ declare global {
      *
      * @docs https://posthog.com/docs/product-analytics/capture-events#setting-event-properties
      */
-    properties?: Record<string, any>;
+    properties?: Record<string, Property>;
   }
 }
 
