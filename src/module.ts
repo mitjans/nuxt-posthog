@@ -38,7 +38,7 @@ export interface ModuleOptions {
    * @type object
    * @docs https://posthog.com/docs/libraries/js#config
    */
-  clientOptions?: PostHogConfig;
+  clientOptions?: Partial<PostHogConfig>;
 
   /**
    * If set to true, the module will be disabled (no events will be sent to PostHog).
