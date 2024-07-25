@@ -76,10 +76,11 @@ export default defineNuxtModule<ModuleOptions>({
     );
 
     // Make sure url and key are set
-    if (!nuxt.options.runtimeConfig.public.posthog.publicKey) {
+    const enabled = !nuxt.options.runtimeConfig.public.posthog.disabled;
+    if (enabled && !nuxt.options.runtimeConfig.public.posthog.publicKey) {
       console.warn('Missing PostHog API public key, set it either in `nuxt.config.ts` or via env variable');
     }
-    if (!nuxt.options.runtimeConfig.public.posthog.host) {
+    if (enabled && !nuxt.options.runtimeConfig.public.posthog.host) {
       console.warn('Missing PostHog API host, set it either in `nuxt.config.ts` or via env variable');
     }
 
