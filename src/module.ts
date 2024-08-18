@@ -29,6 +29,14 @@ export interface ModuleOptions {
    */
   capturePageViews?: boolean;
 
+    /**
+   * If set to true, the module will capture page leaves automatically
+   * @default true
+   * @type boolean
+   * @docs https://posthog.com/docs/product-analytics/capture-events#single-page-apps-and-pageviews
+   */
+  capturePageLeaves?: boolean;
+
   /**
    * PostHog Client options
    * @default {
@@ -58,6 +66,7 @@ export default defineNuxtModule<ModuleOptions>({
     publicKey: process.env.POSTHOG_API_KEY as string,
     host: process.env.POSTHOG_API_HOST as string,
     capturePageViews: true,
+    capturePageLeaves: true,
     disabled: false,
   },
   setup(options, nuxt) {
@@ -70,6 +79,7 @@ export default defineNuxtModule<ModuleOptions>({
         publicKey: options.publicKey,
         host: options.host,
         capturePageViews: options.capturePageViews,
+        capturePageLeaves: options.capturePageLeaves,
         clientOptions: options.clientOptions,
         disabled: options.disabled,
       },
