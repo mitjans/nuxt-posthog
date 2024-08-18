@@ -40,7 +40,7 @@ export default defineNuxtPlugin({
     if (config.capturePageViews) {
       // Make sure that pageviews are captured with each route change
       const router = useRouter();
-     
+
       router.afterEach((to) => {
         posthog.capture('$pageview', {
           current_url: to.fullPath,
@@ -52,12 +52,11 @@ export default defineNuxtPlugin({
       const router = useRouter();
 
       router.beforeEach((from) => {
-        posthog.capture('$pageleave', { 
-          current_url: from.fullPath, 
+        posthog.capture('$pageleave', {
+          current_url: from.fullPath,
         });
       });
     }
-    
 
     posthog.onFeatureFlags((flags, featureFlags) => {
       posthogFeatureFlags.value = featureFlags;

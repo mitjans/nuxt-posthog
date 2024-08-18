@@ -29,7 +29,7 @@ export interface ModuleOptions {
    */
   capturePageViews?: boolean;
 
-    /**
+  /**
    * If set to true, the module will capture page leaves automatically
    * @default true
    * @type boolean
