@@ -14,7 +14,4 @@
   </PostHogFeatureFlag>
 </template>
 
-<script setup lang="ts">
-const runtimeConfig = useRuntimeConfig();
-runtimeConfig.public.posthogApiKey;
-</script>
+<script setup lang="ts"></script>
