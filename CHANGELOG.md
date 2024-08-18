@@ -1,4 +1,27 @@
 
+## v1.5.2
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.0...v1.5.2)
+
+### 🩹 Fixes
+
+- Pnpm-lock file ([c4c27bd](https://github.com/mitjans/nuxt-posthog/commit/c4c27bd))
+- **setup:** Do not show warnings if module is disabled ([a063808](https://github.com/mitjans/nuxt-posthog/commit/a063808))
+
+### 🏡 Chore
+
+- Update pnpm lock file ([9cc90e1](https://github.com/mitjans/nuxt-posthog/commit/9cc90e1))
+- Update pnpm lock file ([213a41b](https://github.com/mitjans/nuxt-posthog/commit/213a41b))
+- Manually update package version ([fc1d3a8](https://github.com/mitjans/nuxt-posthog/commit/fc1d3a8))
+
+### 🎨 Styles
+
+- Apply eslint fix ([98dca16](https://github.com/mitjans/nuxt-posthog/commit/98dca16))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.5.0
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.4.4...v1.5.0)
