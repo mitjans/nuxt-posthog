@@ -1,4 +1,4 @@
-import { defineNuxtModule, addImports, addComponent, addPlugin, createResolver, addTypeTemplate } from '@nuxt/kit';
+import { defineNuxtModule, addComponent, addPlugin, createResolver, addTypeTemplate } from '@nuxt/kit';
 import type { PostHogConfig } from 'posthog-js';
 import { defu } from 'defu';
 
@@ -94,13 +94,14 @@ export default defineNuxtModule<ModuleOptions>({
       console.warn('Missing PostHog API host, set it either in `nuxt.config.ts` or via env variable');
     }
 
+    nuxt.hook('imports:dirs', (dirs) => {
+      dirs.push(resolve('./runtime/composables'));
+    });
+
     addPlugin(resolve('./runtime/plugins/directives'));
     addPlugin(resolve('./runtime/plugins/posthog.client'));
     addPlugin(resolve('./runtime/plugins/posthog.server'));
-    addImports({
-      from: resolve('./runtime/composables/usePostHogFeatureFlag'),
-      name: 'usePostHogFeatureFlag',
-    });
+
     addComponent({
       filePath: resolve('./runtime/components/PostHogFeatureFlag.vue'),
       name: 'PostHogFeatureFlag',
