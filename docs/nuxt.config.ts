@@ -44,4 +44,7 @@ export default defineNuxtConfig({
   uiPro: {
     license: 'oss',
   },
+  build: {
+    transpile: ['shiki'],
+  },
 });
