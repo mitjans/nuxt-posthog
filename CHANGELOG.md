@@ -1,4 +1,27 @@
 
+## v1.5.3
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.2...v1.5.3)
+
+### 🩹 Fixes
+
+- **imports:** Nuxt imports ([8843d39](https://github.com/mitjans/nuxt-posthog/commit/8843d39))
+- **docs:** Shiki dependency ([59cd0cc](https://github.com/mitjans/nuxt-posthog/commit/59cd0cc))
+
+### 📖 Documentation
+
+- Add `capturePageLeaves` documentation ([2c73e00](https://github.com/mitjans/nuxt-posthog/commit/2c73e00))
+
+### 🏡 Chore
+
+- Manually update package version ([fc1d3a8](https://github.com/mitjans/nuxt-posthog/commit/fc1d3a8))
+- **release:** V1.5.2 ([8f04657](https://github.com/mitjans/nuxt-posthog/commit/8f04657))
+- Update dependencies ([e3c8720](https://github.com/mitjans/nuxt-posthog/commit/e3c8720))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.5.2
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.0...v1.5.2)
