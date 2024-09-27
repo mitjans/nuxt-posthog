@@ -31,23 +31,23 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.13.1",
+    "@nuxt/kit": "^3.13.2",
     "defu": "^6.1.4",
-    "posthog-js": "^1.161.3",
+    "posthog-js": "^1.165.0",
     "posthog-node": "^4.2.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.5.7",
     "@nuxt/module-builder": "^0.8.4",
-    "@nuxt/schema": "^3.13.1",
+    "@nuxt/schema": "^3.13.2",
     "@nuxt/test-utils": "^3.14.2",
-    "@types/node": "^20.16.5",
-    "changelogen": "^0.5.5",
-    "eslint": "^9.10.0",
+    "@types/node": "^20.16.9",
+    "changelogen": "^0.5.7",
+    "eslint": "^9.11.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "nuxt": "^3.13.1",
+    "nuxt": "^3.13.2",
     "prettier": "^3.3.3",
     "typescript": "^5.6.2",
     "vitest": "^2.1.1"
