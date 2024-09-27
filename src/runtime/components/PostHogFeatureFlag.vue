@@ -2,13 +2,10 @@
 import { computed } from 'vue';
 import usePostHogFeatureFlag from '../composables/usePostHogFeatureFlag';
 
-const { name } = withDefaults(
-  defineProps<{
-    name: string;
-    match?: boolean | string;
-  }>(),
-  { match: true },
-);
+const { name, match } = defineProps({
+  name: { type: String, required: true },
+  match: { default: true, required: false, type: [String, Boolean] },
+});
 
 const { getFeatureFlag } = usePostHogFeatureFlag();
 
