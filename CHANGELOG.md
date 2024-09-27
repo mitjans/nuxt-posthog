@@ -1,4 +1,21 @@
 
+## v1.5.4
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.3...v1.5.4)
+
+### 🩹 Fixes
+
+- Vue compiler warning using `withDefaults` & reactive prop destructure ([f797438](https://github.com/mitjans/nuxt-posthog/commit/f797438))
+
+### 🏡 Chore
+
+- Update dependencies ([184e49c](https://github.com/mitjans/nuxt-posthog/commit/184e49c))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+- Ryan Weston <ryanlweston@gmail.com>
+
 ## v1.5.3
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.2...v1.5.3)
