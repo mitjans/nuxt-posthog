@@ -1,9 +1,10 @@
 import { useNuxtApp } from '#app';
 import type { ObjectDirective, FunctionDirective } from 'vue';
 
-const directive: FunctionDirective<HTMLElement, PostHogCaptureEvent | string> = (el, { value }) => {
+const directive: FunctionDirective<HTMLElement, PostHogCaptureEvent | string> = (el, { value, arg }) => {
   const { $clientPosthog } = useNuxtApp();
-  el.addEventListener('click', () => {
+
+  el.addEventListener(arg ?? 'click', () => {
     if (!$clientPosthog) return;
 
     if (typeof value === 'string') $clientPosthog.capture(value);
