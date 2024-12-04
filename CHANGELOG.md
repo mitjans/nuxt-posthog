@@ -1,4 +1,21 @@
 
+## v1.6.0
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.4...v1.6.0)
+
+### 🚀 Enhancements
+
+- Allow listening to custom events ([2b44a05](https://github.com/mitjans/nuxt-posthog/commit/2b44a05))
+
+### 📖 Documentation
+
+- Directive custom events ([22f0ab5](https://github.com/mitjans/nuxt-posthog/commit/22f0ab5))
+- Cite vue documentation on using directives with custom components ([fcd7bb0](https://github.com/mitjans/nuxt-posthog/commit/fcd7bb0))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.5.4
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.3...v1.5.4)
