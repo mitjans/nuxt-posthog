@@ -1,4 +1,20 @@
 
+## v1.6.1
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.6.0...v1.6.1)
+
+### 🩹 Fixes
+
+- Avoid duplicating events ([de0efe9](https://github.com/mitjans/nuxt-posthog/commit/de0efe9))
+
+### 💅 Refactors
+
+- Avoid nested ifs ([5af6844](https://github.com/mitjans/nuxt-posthog/commit/5af6844))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.6.0
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.5.4...v1.6.0)
