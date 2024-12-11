@@ -33,16 +33,16 @@
   "dependencies": {
     "@nuxt/kit": "^3.14.1592",
     "defu": "^6.1.4",
-    "posthog-js": "^1.194.3",
-    "posthog-node": "^4.3.1"
+    "posthog-js": "^1.195.0",
+    "posthog-node": "^4.3.2"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.7.2",
     "@nuxt/module-builder": "^0.8.4",
     "@nuxt/schema": "^3.14.1592",
-    "@nuxt/test-utils": "^3.14.4",
-    "@types/node": "^22.10.1",
+    "@nuxt/test-utils": "^3.15.1",
+    "@types/node": "^22.10.2",
     "changelogen": "^0.5.7",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
