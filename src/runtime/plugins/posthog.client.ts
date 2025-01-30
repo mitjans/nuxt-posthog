@@ -27,9 +27,6 @@ export default defineNuxtPlugin({
         featureFlags: posthogFeatureFlags.value,
         featureFlagPayloads: posthogFeatureFlagPayloads.value,
       },
-      loaded: (posthog) => {
-        if (import.meta.env.MODE === 'development') posthog.debug();
-      },
     });
 
     const posthogClient = posthog.init(config.publicKey, clientOptions);
