@@ -41,7 +41,6 @@ export interface ModuleOptions {
    * PostHog Client options
    * @default {
    *    api_host: process.env.POSTHOG_API_HOST,
-   *    loaded: () => <enable debug mode if in development>
    * }
    * @type object
    * @docs https://posthog.com/docs/libraries/js#config
