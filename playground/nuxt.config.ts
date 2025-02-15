@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     publicKey: process.env.POSTHOG_API_KEY,
     host: process.env.POSTHOG_API_HOST,
     clientOptions: {
-      debug: true
-    }
+      debug: true,
+    },
   },
 });
