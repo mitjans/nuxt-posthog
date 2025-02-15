@@ -1,4 +1,29 @@
 
+## v1.6.2
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.6.1...v1.6.2)
+
+### 🩹 Fixes
+
+- Pin posthog-node to 4.4.1 ([25476a5](https://github.com/mitjans/nuxt-posthog/commit/25476a5))
+
+### 📖 Documentation
+
+- Remove logs enabled by default comment ([e53d6bc](https://github.com/mitjans/nuxt-posthog/commit/e53d6bc))
+
+### 🏡 Chore
+
+- Enable logs in playground ([655e25c](https://github.com/mitjans/nuxt-posthog/commit/655e25c))
+
+### 🎨 Styles
+
+- Dangling commas ([342ff65](https://github.com/mitjans/nuxt-posthog/commit/342ff65))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+- Carles Mitjans Coma <carles.mitjans.coma@gmail.com>
+
 ## v1.6.1
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.6.0...v1.6.1)
