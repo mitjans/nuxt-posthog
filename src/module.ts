@@ -54,6 +54,14 @@ export interface ModuleOptions {
    * @type boolean
    */
   disabled?: boolean;
+
+  /**
+   * If set to true, PostHog will be proxied through the Nuxt server.
+   * @default false
+   * @type boolean
+   * @docs https://posthog.com/docs/advanced/proxy/nuxt
+   */
+  proxy?: boolean;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -67,6 +75,7 @@ export default defineNuxtModule<ModuleOptions>({
     capturePageViews: true,
     capturePageLeaves: true,
     disabled: false,
+    proxy: false,
   },
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
@@ -81,16 +90,38 @@ export default defineNuxtModule<ModuleOptions>({
         capturePageLeaves: options.capturePageLeaves,
         clientOptions: options.clientOptions,
         disabled: options.disabled,
+        proxy: options.proxy,
       },
     );
 
+    const config = nuxt.options.runtimeConfig.public.posthog;
+
     // Make sure url and key are set
-    const enabled = !nuxt.options.runtimeConfig.public.posthog.disabled;
-    if (enabled && !nuxt.options.runtimeConfig.public.posthog.publicKey) {
+    const enabled = !config.disabled;
+    if (enabled && !config.publicKey) {
       console.warn('Missing PostHog API public key, set it either in `nuxt.config.ts` or via env variable');
     }
-    if (enabled && !nuxt.options.runtimeConfig.public.posthog.host) {
+    if (enabled && !config.host) {
       console.warn('Missing PostHog API host, set it either in `nuxt.config.ts` or via env variable');
+    }
+
+    // Setup proxy
+    if (enabled && config.proxy && config.host) {
+      const url = new URL(config.host);
+      const region = url.hostname.split('.')[0];
+
+      if (!['eu', 'us'].includes(region)) {
+        throw new Error(`Invalid PostHog API host when setting proxy, expected 'us' or 'eu', got '${region}'`);
+      }
+
+      nuxt.options.routeRules = nuxt.options.routeRules || {};
+
+      nuxt.options.routeRules['/ingest/ph/static/**'] = {
+        proxy: `https://${region}-assets.i.posthog.com/static/**`,
+      };
+      nuxt.options.routeRules['/ingest/ph/**'] = {
+        proxy: `https://${region}.i.posthog.com/**`,
+      };
     }
 
     nuxt.hook('imports:dirs', (dirs) => {
