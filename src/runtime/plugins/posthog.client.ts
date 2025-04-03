@@ -22,7 +22,7 @@ export default defineNuxtPlugin({
     const clientOptions = defu<PostHogConfig, Partial<PostHogConfig>[]>(config.clientOptions ?? {}, {
       api_host: config.host,
       capture_pageview: false,
-      capture_pageleave: config.capturePageLeaves,
+      capture_pageleave: !!config.capturePageLeaves,
       bootstrap: {
         featureFlags: posthogFeatureFlags.value,
         featureFlagPayloads: posthogFeatureFlagPayloads.value,
