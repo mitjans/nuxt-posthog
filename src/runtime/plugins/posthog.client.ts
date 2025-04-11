@@ -22,7 +22,7 @@ export default defineNuxtPlugin({
     const clientOptions = defu<PostHogConfig, Partial<PostHogConfig>[]>(config.clientOptions ?? {}, {
       api_host: config.host,
       capture_pageview: false,
-      capture_pageleave: false,
+      capture_pageleave: !!config.capturePageLeaves,
       bootstrap: {
         featureFlags: posthogFeatureFlags.value,
         featureFlagPayloads: posthogFeatureFlagPayloads.value,
@@ -41,16 +41,6 @@ export default defineNuxtPlugin({
       router.afterEach((to) => {
         posthog.capture('$pageview', {
           current_url: to.fullPath,
-        });
-      });
-    }
-    if (config.capturePageLeaves) {
-      // Make sure that pageleaves are captured with each route change
-      const router = useRouter();
-
-      router.beforeEach((from) => {
-        posthog.capture('$pageleave', {
-          current_url: from.fullPath,
         });
       });
     }
