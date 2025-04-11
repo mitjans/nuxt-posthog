@@ -1,4 +1,16 @@
 
+## v1.6.3
+
+[compare changes](https://github.com/mitjans/nuxt-posthog/compare/list...v1.6.3)
+
+### 🏡 Chore
+
+- Use mts/mjs ([e26fcd3](https://github.com/mitjans/nuxt-posthog/commit/e26fcd3))
+
+### ❤️ Contributors
+
+- Carles Mitjans <carles.mitjans.coma@gmail.com>
+
 ## v1.6.2
 
 [compare changes](https://github.com/mitjans/nuxt-posthog/compare/v1.6.1...v1.6.2)
