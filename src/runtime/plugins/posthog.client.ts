@@ -29,6 +29,14 @@ export default defineNuxtPlugin({
       },
     });
 
+    if (config.proxy && config.host) {
+      const url = new URL(config.host);
+      const region = url.hostname.split('.')[0];
+
+      clientOptions.ui_host = `https://${region}.posthog.com`;
+      clientOptions.api_host = `${window.location.origin}/ingest/ph`;
+    }
+
     const posthogClient = posthog.init(config.publicKey, clientOptions);
 
     const identity = useCookie('ph-identify');
