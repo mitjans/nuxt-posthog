@@ -15,8 +15,6 @@
       "require": "./dist/module.cjs"
     }
   },
-  "main": "./dist/module.cjs",
-  "types": "./dist/types.d.ts",
   "files": [
     "dist"
   ],
