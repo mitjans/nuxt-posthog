@@ -12,6 +12,11 @@
       This is the feature flag payload: {{ payload }}
     </div>
   </PostHogFeatureFlag>
+  <button @click="testBackendIdentity">Test backend</button>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const testBackendIdentity = async () => {
+  await $fetch('/api/test');
+};
+</script>
