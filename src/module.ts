@@ -1,4 +1,12 @@
-import { defineNuxtModule, addComponent, addPlugin, createResolver, addTypeTemplate } from '@nuxt/kit';
+import {
+  defineNuxtModule,
+  addComponent,
+  addPlugin,
+  createResolver,
+  addTypeTemplate,
+  addServerPlugin,
+  addServerImports,
+} from '@nuxt/kit';
 import type { PostHogConfig } from 'posthog-js';
 import { defu } from 'defu';
 
@@ -140,5 +148,21 @@ export default defineNuxtModule<ModuleOptions>({
       filename: 'types/posthog-directives.d.ts',
       src: resolve('./runtime/types/directives.d.ts'),
     });
+
+    addServerPlugin(resolve('./runtime/plugins/nitro'));
+    addServerImports([
+      {
+        from: resolve('./runtime/utils/nitro'),
+        name: 'usePostHog',
+      },
+    ]);
+
+    addTypeTemplate(
+      {
+        filename: 'types/posthog-nitro.d.ts',
+        src: resolve('./runtime/types/nitro.d.ts'),
+      },
+      { nitro: true },
+    );
   },
 });
