@@ -82,7 +82,7 @@ export default defineNuxtModule<ModuleOptions>({
     host: process.env.POSTHOG_API_HOST as string,
     capturePageViews: true,
     capturePageLeaves: true,
-    disabled: false,
+    disabled: import.meta.env.NODE_ENV === 'development',
     proxy: false,
   },
   setup(options, nuxt) {
