@@ -24,9 +24,21 @@ export default defineNuxtPlugin({
     const posthog = new PostHog(config.publicKey, { host: config.host });
     await posthog.reloadFeatureFlags();
 
-    const identity = useCookie('ph-identify', { default: () => '' });
+    // Respect cookieless mode for identity
+    const cookielessMode = config.clientOptions?.cookieless_mode;
+    let identity = '';
 
-    const { featureFlags, featureFlagPayloads } = await posthog.getAllFlagsAndPayloads(identity.value);
+    if (cookielessMode !== 'always') {
+      const identityCookie = useCookie('ph-identify', { default: () => '' });
+
+      if (cookielessMode === 'on_reject') {
+        identity = identityCookie.value || '';
+      } else {
+        identity = identityCookie.value;
+      }
+    }
+
+    const { featureFlags, featureFlagPayloads } = await posthog.getAllFlagsAndPayloads(identity);
 
     useState<Record<string, boolean | string> | undefined>('ph-feature-flags', () => featureFlags);
     useState<Record<string, JsonType> | undefined>('ph-feature-flag-payloads', () => featureFlagPayloads);

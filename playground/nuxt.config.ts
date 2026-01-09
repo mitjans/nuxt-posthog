@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     host: process.env.POSTHOG_API_HOST,
     clientOptions: {
       debug: true,
+      cookieless_mode: 'on_reject',
     },
   },
 
