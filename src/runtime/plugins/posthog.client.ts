@@ -34,7 +34,7 @@ export default defineNuxtPlugin({
       const region = url.hostname.split('.')[0];
 
       clientOptions.ui_host = `https://${region}.posthog.com`;
-      clientOptions.api_host = `${window.location.origin}/ingest/ph`;
+      clientOptions.api_host = `${window.location.origin}${config.proxyPath}`;
     }
 
     const posthogClient = posthog.init(config.publicKey, clientOptions);

@@ -70,6 +70,13 @@ export interface ModuleOptions {
    * @docs https://posthog.com/docs/advanced/proxy/nuxt
    */
   proxy?: boolean;
+  /**
+   * The path for the proxy if enabled. The module will create `${proxyPath}/**` and `${proxyPath}/static/**` routes.
+   * @default '/ingest/ph'
+   * @type string
+   * @docs https://posthog.com/docs/advanced/proxy/nuxt
+   */
+  proxyPath?: string;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -84,6 +91,7 @@ export default defineNuxtModule<ModuleOptions>({
     capturePageLeaves: true,
     disabled: false,
     proxy: false,
+    proxyPath: '/ingest/ph',
   },
   setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url);
@@ -99,6 +107,7 @@ export default defineNuxtModule<ModuleOptions>({
         clientOptions: options.clientOptions,
         disabled: options.disabled,
         proxy: options.proxy,
+        proxyPath: options.proxyPath,
       },
     );
 
@@ -124,10 +133,10 @@ export default defineNuxtModule<ModuleOptions>({
 
       nuxt.options.routeRules = nuxt.options.routeRules || {};
 
-      nuxt.options.routeRules['/ingest/ph/static/**'] = {
+      nuxt.options.routeRules[`${options.proxyPath}/static/**`] = {
         proxy: `https://${region}-assets.i.posthog.com/static/**`,
       };
-      nuxt.options.routeRules['/ingest/ph/**'] = {
+      nuxt.options.routeRules[`${options.proxyPath}/**`] = {
         proxy: `https://${region}.i.posthog.com/**`,
       };
     }
