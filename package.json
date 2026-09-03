@@ -61,5 +61,5 @@
       "vue-demi"
     ]
   },
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@11.25.0"
 }
