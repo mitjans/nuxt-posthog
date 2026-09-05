@@ -33,25 +33,25 @@
   },
   "dependencies": {
     "@nuxt/kit": "^4.2.1",
-    "defu": "^6.1.4",
-    "posthog-js": "^1.252.0",
-    "posthog-node": "5.14.0"
+    "defu": "^6.1.7",
+    "posthog-js": "^1.427.2",
+    "posthog-node": "5.51.6"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^3.1.1",
-    "@nuxt/eslint-config": "^1.4.1",
-    "@nuxt/module-builder": "^1.0.1",
+    "@nuxt/devtools": "^3.4.2",
+    "@nuxt/eslint-config": "^1.17.0",
+    "@nuxt/module-builder": "^1.0.3",
     "@nuxt/schema": "^4.2.1",
-    "@nuxt/test-utils": "^3.19.1",
-    "@types/node": "^24.0.1",
-    "changelogen": "^0.6.1",
-    "eslint": "^9.29.0",
-    "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-prettier": "^5.4.1",
+    "@nuxt/test-utils": "^3.23.0",
+    "@types/node": "^24.13.3",
+    "changelogen": "^0.6.2",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
     "nuxt": "^4.2.1",
-    "prettier": "^3.5.3",
-    "typescript": "^5.8.3",
-    "vitest": "^4.0.14"
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -61,5 +61,5 @@
       "vue-demi"
     ]
   },
-  "packageManager": "pnpm@10.12.1"
+  "packageManager": "pnpm@10.34.5"
 }
