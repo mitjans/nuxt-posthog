@@ -45,7 +45,7 @@
     "@nuxt/test-utils": "^3.19.1",
     "@types/node": "^24.0.1",
     "changelogen": "^0.6.1",
-    "eslint": "^9.29.0",
+    "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.1",
     "nuxt": "^4.2.1",
